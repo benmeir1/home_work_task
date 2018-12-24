@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Artist Game</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/indexCss.css">
+</head>
+<body>
+	<div class = "game_box not_show" id="gaemBox">
+		<div class = "header__logoBox">
+            <img src="../static/img/bizzabo_logo.png" alt="logo" class = "header__logo">
+        </div>
+		<h2 class="heading-secondary">Guess The Artist Game</h1>
+		<h1 class="game__round" id="round"></h1>
+		<h1 class="game__answerPoints" id="answerPoints"></h1>
+
+		<div class="game__albumsBox" id="albums_div">
+			<div class='album_container' id="album0">
+				<h1 class="album_name" id='head_album0'></h1>
+			</div> 
+			<div class='album_container not_show' id="album1">
+				<h1 class="album_name not_show" id='head_album1'></h1>
+			</div> 
+			<div class='album_container not_show' id="album2">
+				<h1 class="album_name not_show" id='head_album2'></h1>
+			</div> 
+		</div>
+		<form action="" class="gamebox__userSelection__form" id="userForm">
+			  Your Guess: <input type="text" name="userGuess" id="user_answer" value=""><br>
+			  <input type="button" value="Check Answer" class="gamebox__userSelection__submit btn fourth" id="submitBTN">
+			  <input type="button" value="Next Round" class="gamebox__nextround btn fourth" id="nextRoundBTN">
+			  <button type="button" id="hint_btn" class="HintButton btn fourth">Hint</button>
+			  <h1 class="computer_output heading-secondary" id='computerOutput'>You Are Correct!</h1>
+		</form>
+		<h1 class="game__scoreBox heading__score" id="score"></h1>
+		 <button type="button" id="newGameButton" class="new_game_button new_game btn fourth" onClick="window.location.reload()">New Game</button>
+	</div>
+
+
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="../static/js/indexJS.js"></script>
+</body>
+</html>
